@@ -1,0 +1,28 @@
+.header{
+    font-family: Inter;
+    font-weight: 900;
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.bigContainer{
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Inter;
+}
+
+.container{
+    /* border: 2px solid green; */
+    margin: 20px;
+    background-color: #F7E2E2 ;
+    padding: 20px 40px;
+}
+
+.item{
+    /* border: 2px solid red; */
+    padding: 10px 0px;
+    /* border-bottom: 2px solid grey; */
+    
+    font-weight: bold  ;
+}

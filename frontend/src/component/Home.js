@@ -6,28 +6,22 @@ import Styles from './Home.module.css'
 const Home = () => {
 
   const navigate = useNavigate()
-  const {user} = useSelector(state=> state.user)
-
-  const userHandler = () => {
-      navigate("/user")
+  
+  const viewHandler = () => {
+    navigate("/bucketlists")
   }
 
-  const clientHandler = () => {
-    navigate("/client")
+  const createHandler =() =>{
+    navigate("/createbucketlist")
   }
 
-  const adminHandler = () => {
-    navigate("/admin")
-  }
+
 
   return (
     <div className={Styles.box}>
-      <h4 className={Styles.header}> { user ? `Hi, ${user.name}` : " "}</h4>
-
       <div className={Styles.buttonContainer}>
-            <button onClick={userHandler} className={Styles.button}>User</button>
-            <button onClick={clientHandler} className={Styles.button}>Client</button>
-            <button onClick={adminHandler} className={Styles.button}>Admin</button>
+            <button onClick={viewHandler} className={Styles.button}>View BucketLists</button>
+            <button onClick={createHandler} className={Styles.button}>Create Your BucketList</button>
         </div>
     </div>
   )

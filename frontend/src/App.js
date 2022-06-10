@@ -12,28 +12,20 @@ import { loaduser } from './actions/userAction';
 import User from './component/UserLevel/User';
 import Client from './component/UserLevel/Client';
 import Admin from './component/UserLevel/Admin';
+import CreateBucket from './component/CreateBucket';
+import ViewBuckets from './component/ViewBuckets';
 function App() {
    const dispatch = useDispatch();
-
-   const {loading, isAuthenticated, user } = useSelector(state => state.user)
-
-
-  useEffect(() => {
-    dispatch(loaduser())
-  },[])
 
   return (
     <>
     <Navbar/>
 
     <Routes>
-      <Route exact path='/' element={isAuthenticated ? <Home/>: <NotLogin/>}/>
-      <Route path='/register' element={<Register/>}/>
-      <Route path='/login' element={<Login/>}/>
-      <Route path='/home' element={<Home/>}/>
-      <Route path='/user' element={user && ["user" , "client", "admin"].includes(user.role) ? <User/> : <Login/>}/>
-      <Route path='/client' element={ user && ["client", "admin"].includes(user.role) ? <Client/> : <Login/>}/>
-      <Route path='/admin' element={user && [ "admin"].includes(user.role) ? <Admin/> : <Login/>}/>
+      
+      <Route path='/' element={<Home/>}/>
+      <Route path='/createbucketlist' element={<CreateBucket/>}/>
+      <Route path='/bucketlists' element={<ViewBuckets/>}/>
     </Routes>
     </>
   );

@@ -11,9 +11,7 @@ const Navbar = () => {
             MERN
         </h1>
 
-        <h5 className={Styles.userRole}>
-            {user ? `Role: ${user.role}` : " "}
-        </h5>
+
 
     </div>
     </>

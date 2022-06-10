@@ -1,0 +1,64 @@
+.box{
+    background-color: #F7E2E2;
+    max-width: 500px;
+    margin: 200px auto;
+    padding:20px 50px;
+    font-family: Inter;   
+}
+
+.header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formInline{
+    display: flex;
+}
+
+.input{
+    border: none;
+    padding: 10px 10px;
+    min-width: 60%;
+}
+
+.inputbox{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+
+.removebutton{
+    display: block;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    padding: 10px 10px;
+    border: none;
+    min-width: 100px;
+    margin-left: auto;
+    transition: all 0.1s ease-in;   
+}
+
+.buttonsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    padding: 10px 10px;
+    border: none;
+    min-width: 100px;
+    margin: 20px;
+    transition: all 0.1s ease-in;
+}
+
+.button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
