@@ -26,12 +26,18 @@
     font-weight: 900;
     padding: 10px 10px;
     border: none;
-    min-width: 100px;
-    margin-right: 20px;
+    min-width: 200px;
+    margin: 20px;
     transition: all 0.1s ease-in;
 }
 
 .button:hover{
     cursor: pointer;
     transform: scale(1.1);
+}
+
+@media screen and (max-width:900px) {
+    .buttonContainer{
+        flex-direction: column;
+    }
 }

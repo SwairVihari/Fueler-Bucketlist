@@ -10,3 +10,22 @@
 .userRole{
     font-weight: 600;
 }
+
+
+.button{
+    display: block;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    padding: 10px 10px;
+    border: none;
+    min-width: 100px;
+    /* margin: 20px 0px; */
+    margin-left: auto;
+    transition: all 0.1s ease-in;
+}
+
+.button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
